@@ -3,10 +3,10 @@ import pandas as pd
 import pickle
 from PIL import Image
 
-model = pickle.load(open(r"C:\Users\HP\PycharmProjects\streamlit_learn\IRIS-model.pkl", "rb"))
+model = pickle.load(open("IRIS-model.pkl", "rb"))
 
 st.header("Iris Classification:")
-image = Image.open(r"C:\Users\HP\PycharmProjects\streamlit_learn\wallpaperflare.com_wallpaper.jpg")
+image = Image.open("wallpaperflare.com_wallpaper.jpg")
 st.image(image, use_column_width=True, output_format='JPEG')
 st.write("Please insert values, to get Iris class prediction")
 
